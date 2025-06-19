@@ -11,9 +11,13 @@ We will follow the **Clean Architecture** principle to divide the project into t
 ```
 lib/
 ├── core/
+│   ├── components/
 │   ├── error/
 │   ├── usecases/
 │   ├── utils/
+│   ├── services/
+│   ├── helpers/
+│   ├── constants/
 ├── features/
 │   └── feature_name/
 │       ├── data/
@@ -26,7 +30,9 @@ lib/
 │       │   └── usecases/
 │       └── presentation/
 │           ├── blocs/
-│           └── pages/
+│           └── screens/
+│               └── component/
+│                   └── widgets/
 ├── injection_container.dart
 └── main.dart
 ```
